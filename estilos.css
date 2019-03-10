@@ -1,0 +1,50 @@
+body{background-color: #02010A; font-family: 'Dancing Script', cursive; font-size: 1.5vw}
+
+header{background-color: #5B7989;margin:auto; color: white; border-radius: 10px 10px 0px 0px ; display:flex;flex-flow: row wrap;}
+header>div{margin:auto}
+h1{text-shadow: 2px 2px #02010A; }
+footer {background-color: #C6d5c5;border-radius:0px 0px 10px 10px; display: flex;align-content: center;}
+img[src$=svg]{width: 10%}
+img[src$=png]{width: 10%}
+div[class$=s]{margin-left: 10%}
+div[class$=o]{margin-left: 5%}
+
+#contenedor1{ display: flex; flex-direction: column;background-color: #82C3A6;padding:5%}
+#contenedor2{display: flex;flex-direction: row; background-color: #D5C75F;margin-bottom: 0;padding: 5%}
+
+.central img{width: 90%;margin:5%;box-shadow: 2px 2px #02010A;}
+
+.secundaria img { width: 90%;margin:5%;box-shadow: 2px 2px #02010A; display: flex; flex-direction:column;}
+.secundaria img:hover{transform: rotate(10deg); box-shadow: 2px 2px #82C3A6}
+
+.secundaria2 img{ width: 90%;margin:5%;box-shadow: 2px 2px #02010A; display: flex; flex-direction:column;}
+.secundaria2 img:hover{transform: translate(20px, -5px);box-shadow: 2px 2px #82C36A}
+
+.linkbajo {display: flex;flex-flow: column nowrap; text-align: center; margin-bottom: 10%; }
+
+.linkbajo1{display: flex;flex-flow: column nowrap;text-align: center;margin-bottom: 10%;  }
+
+.contacto{width: 25%}
+.terminos{width: 25%}
+.redes{width: 25%}
+.derechos{width: 25%}
+
+#galeria{background-color: #D5C75F;display: flex;flex-direction: row;align-items: center; width: 100%;padding: 2%}
+img[src$=jpg]{width: 90%;box-shadow: 2px 2px #02010A; display: flex;flex-direction: row;margin: auto;}
+.arbol{filter: blur(10px);-webkit-filter: blur(10px)}
+.atardecer{filter: grayscale(100%);-webkit-filter:grayscale(100%)}
+.paramo{filter: sepia(90%);-webkit-filter:sepia(90%);``}
+
+
+
+@media screen and (max-width:480px){
+  #contenedor1{width: 100%;}
+  #contenedor2{display: flex; flex-flow: column wrap;width: 100%; font-size: 1.5vw}
+  #galeria{display: flex; flex-flow: column wrap;width: 100%;}
+  header{display: flex; flex-flow: column wrap;width: 100%;font-size: 4vw}
+  footer{width: 100%;display:flex;flex-flow: column wrap;text-align:center;;font-size: 4vw}
+  .contacto{width: 100%;display:flex;flex-flow: column wrap;}
+  .terminos{width: 100%;display:flex;flex-flow: column wrap;}
+  .redes{width: 100%;display:flex;flex-flow: column wrap;}
+  .derechos{width: 100%;display:flex;flex-flow: column wrap;}
+  a[class^=linkbajo]{font-size: 4vw}
