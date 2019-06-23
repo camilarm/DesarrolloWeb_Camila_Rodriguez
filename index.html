@@ -1,75 +1,88 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Hoja de Vida</title>
-  </head>
-  <body>
-    <header>
-      <svg>
-        <image xlink:href="images/letter-c.svg" width="100" height="100" </image>
-      </svg>
-      <h1>Hoja de Vida</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="educacion.html">Educacion</a></li>
-        <li><a href="experiencia.html">Experiencia</a>
-      </ul>
-    </nav>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body onload="Calculadora()">
+  <div class="fondo">
+    <div class="titulo-container">
+      <h1>¡No pierdas <span>la cuenta!</span></h1>
+    </div>
 
-    <section>
-      <form action="index.html" method="post" name="Hoja_de_Vida">
-        <label for="Nombre">Nombre*</label>
-        <br>
-        <input type="text" required id="Nombre">
-        <p>
-        <label for="Apellido">Apellido*</label>
-        <br>
-    <input type="text" id="Apellido" required>
-        </p>
-        <p>
-        <label for="FechaNacimiento">Fecha de Nacimiento</label>
-        <br>
-        <input type="date" id="FechaNacimiento" required>
-        </p>
-        <p>
-        <label for="LugarNacimiento">Lugar de Nacimiento</label>
-        <br>
-        <select>
-          <option value="Argentina">Argentina</option>
-          <option>Chile</option>
-          <option>Panama</option>
-          <option>Ecuador</option>
-          <option>Colombia</option>
+    <div class="notas-container">
+      <h2>Tus apuntes...</h2>
+      <textarea class="nota-input" placeholder="Escribe aquí..."></textarea>
+    </div>
 
-        </select>
-        </p>
+    <div id="calculadoraFondo">
+      <div class="pantalla">
+        <span id="display">0</span>
+      </div>
 
-      </form>
-     </section>
-     <h2>Informacion personal</h2>
-     <img src="images/happy.jpg" title="Camila" width="200" height="150"/>
-     <h3>Perfil</h3>
-     <p>Mi nombre es Camila Rodriguez, estudie Biologia marina, he trabajado muchos años en acuicultura.</p> <p>
-     Actualmente estoy capacitandome en desarrollo web y apps moviles para combinar biologia con aplicaciones y asi facilitar la difusion <br>
-     cientifica en el mundo.</p>
+      <div class="teclado">
+        <img src="image/ON.png" alt="On" class="tecla" id="on"/>
+        <img src="image/sign.png" alt="signo" class="tecla" id="sign"/>
+        <img src="image/raiz.png" alt="raiz" class="tecla" id="raiz"/>
+        <img src="image/dividido.png" alt="dividido" class="tecla divide" id="dividido"/>
 
-     <p>Adicionalmente tengo conocimiento tanto escrito como hablado en los siguientes idiomas
-       <ul>
-         <li>Ingles</li>
-           <li>Frances</li>
-            <li>Español</li>
-       </ul>
-       <footer>
-         Contacto: camila@gmail.com
+        <img src="image/7.png" alt="7" class="tecla" id="siete"/>
+        <img src="image/8.png" alt="8" class="tecla" id="ocho"/>
+        <img src="image/9.png" alt="9" class="tecla" id="nueve"/>
+        <img src="image/por.png" alt="por" class="tecla multiplica" id="por"/>
+
+        <img src="image/4.png" alt="4" class="tecla" id="cuatro"/>
+        <img src="image/5.png" alt="5" class="tecla" id="cinco"/>
+        <img src="image/6.png" alt="6" class="tecla" id="seis"/>
+        <img src="image/menos.png" alt="menos" class="tecla resta" id="menos"/>
+
+        <div class="row">
+          <div class="col1">
+            <img src="image/1.png" alt="1" class="tecla" id="uno"/>
+            <img src="image/2.png" alt="2" class="tecla" id="dos"/>
+            <img src="image/3.png" alt="3" class="tecla" id="tres"/>
+
+            <img src="image/0.png" alt="0" class="tecla" id="cero"/>
+            <img src="image/punto.png" alt="punto" class="tecla" id="punto"/>
+            <img src="image/igual.png" alt="igual" class="tecla" id="igual"/>
+          </div>
+          <div class="col2">
+            <img src="image/mas.png" alt="mas" class="tecla suma" id="mas"/>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
 
-          </footer>
+
+    <div class="container-libreta">
+      <div class="libreta">
+        <div class="contenido-ingresos">
+          <h3>Ingresos</h3>
+          <ul>
+            <li><span>Salario: </span>$1300.00</li>
+            <li><span>Bonificación: </span>$200.00</li>
+          </ul>
+        </div>
+        <div class="contenido-egresos">
+          <h3>Egresos</h3>
+          <ul>
+            <li><span>Renta: </span>$300.00</li>
+            <li><span>Alimentos: </span>$250.00</li>
+            <li><span>Restaurantes: </span>$120.00</li>
+            <li><span>Automóvil: </span>$100.00</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 
-  </body>
+  </div>
+  <script src="js/app.js"></script>
+</body>
 </html>
-<meta charset="utf-8">
